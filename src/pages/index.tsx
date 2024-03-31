@@ -108,6 +108,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Carousel>
         <StaticImage src="../images/sunset.png" alt="Sunset" />
         <StaticImage src="../images/cloud_ladder.png" alt="Cloud" />
+        <StaticImage src="../images/child_hands.png" alt="Hands" />
       </Carousel>
     </main>
   )

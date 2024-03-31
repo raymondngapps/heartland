@@ -50,7 +50,13 @@ const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
                 { 
                     Children.map<React.ReactNode, any>(props?.children, (child, index) =>
                         <Slide direction={slideDirection} in={currentPage === index} mountOnEnter unmountOnExit>
-                            <Box sx={{ display: currentPage === index ? "inline" : "none" }}>{child}</Box>
+                            <Box 
+                                sx={{ 
+                                    display: currentPage === index ? "flex" : "none" 
+                                }}
+                            >
+                                {child}
+                            </Box>
                         </Slide>
                     )
                 }
