@@ -1,9 +1,8 @@
 import * as React from "react"
 import {graphql} from 'gatsby';
 import type { HeadFC, PageProps } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import ResponsiveAppBar from "../components/ResponsiveAppBar"
-import Carousel from "../components/Carousel"
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import Banner from "../components/Banner";
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 const pageStyles = {
@@ -105,11 +104,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
       <ResponsiveAppBar />
-      <Carousel>
-        <StaticImage src="../images/sunset.png" alt="Sunset" />
-        <StaticImage src="../images/cloud_ladder.png" alt="Cloud" />
-        <StaticImage src="../images/child_hands.png" alt="Hands" />
-      </Carousel>
+      <Banner />
     </main>
   )
 }

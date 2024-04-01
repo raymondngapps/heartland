@@ -1,13 +1,15 @@
 import React, { useState, useCallback, Children} from 'react';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+import { Box, Container, Paper } from '@mui/material';
 import { IconButton } from '@mui/material';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { Trans } from 'gatsby-plugin-react-i18next';
 import Slide from '@mui/material/Slide';
 import Stack from '@mui/material/Stack';
 
 interface CarouselProps {
+    headers: string[];
+    contents: string[];
     sx?: React.CSSProperties;
 }
 
@@ -43,6 +45,7 @@ const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
                 <NavigateBeforeIcon />
             </IconButton>
             <Paper 
+                elevation={0}
                 sx={{
                     overflow: 'hidden',
                 }}
@@ -50,13 +53,42 @@ const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
                 { 
                     Children.map<React.ReactNode, any>(props?.children, (child, index) =>
                         <Slide direction={slideDirection} in={currentPage === index} mountOnEnter unmountOnExit>
-                            <Box 
+                            <Container 
+                                maxWidth="xl"
                                 sx={{ 
-                                    display: currentPage === index ? "flex" : "none" 
+                                    display: currentPage === index ? "flex" : "none",
                                 }}
                             >
-                                {child}
-                            </Box>
+                                <Box>
+                                    {child}
+                                </Box>
+                                <Box 
+                                    sx={{
+                                        position: 'absolute',
+                                        color: 'white',
+                                        backgroundColor: 'rgba(0,0,0,.5)',
+                                        fontSize: '50px',
+                                        margin: '10px',
+                                        paddingLeft: '30px',
+                                        paddingRight: '30px',
+                                    }}
+                                > 
+                                        <Trans>{props.headers[index]}</Trans> 
+                                </Box>
+                                <Box 
+                                    sx={{
+                                        position: 'absolute',
+                                        color: 'white',
+                                        alignSelf: 'flex-end',
+                                        margin: '10px',
+                                        paddingLeft: '10px',
+                                        paddingRight: '10px',
+                                        backgroundColor: 'rgba(0,0,0,.7)',
+                                    }}
+                                > 
+                                        <Trans>{props.contents[index]}</Trans> 
+                                </Box>
+                            </Container>
                         </Slide>
                     )
                 }

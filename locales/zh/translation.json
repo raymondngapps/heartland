@@ -4,11 +4,21 @@
     "en": "English",
     "zh": "中文",
     "APP_BAR_HOME": "首頁",
-    "APP_BAR_HEARTLAND_FUND": "心岸社旗基金",
+    "APP_BAR_HEARTLAND_FUND": "心岸社企基金",
     "APP_BAR_OUR_TEAM": "我們的團隊",
     "APP_BAR_SERVICES": "服務",
     "APP_BAR_TRAININGS": "培訓",
     "APP_BAR_RESOURCES": "資源中心",
     "APP_BAR_DRUMBEAT": "DRUMBEAT",
-    "APP_BAR_BLOG": "博客"
+    "APP_BAR_BLOG": "博客",
+    "BANNER_HEARTLAND_SOCIAL_ENTERPRISE": "心岸社企",
+    "BANNER_SEX_EDUCATION": "智「取」性教育課程",
+    "BANNER_UNDERSTAND_DEATH": "從繪本開始:<br/>了解死亡及兒童情緒支援工作坊",
+    "BANNER_HEARTLAND_SOCIAL_ENTERPRISE_CONTENT": "A beautiful mind",
+    "BANNER_SEX_EDUCATION_CONTENT": "你試過向智力障礙人講解性知識時詞不達意嗎? 你試過不懂得表達有關性知識及性態度嗎?你知道甚麼是性知識及性態度嗎? <br/>性是本地文化中的忌諱，要與身邊人談論性已不是易事，更何況是智障人士? <br/>因此，本課程希望令同工學習與智障人士談論性，甚至性教育",
+    "BANNER_UNDERSTAND_DEATH_CONTENT": "小朋友對死亡的理解與成年人不同，而其接受程度亦因而相異。然而，成年人面對死亡時不但要處理自己的情緒，更要協助小朋友<br/>理解及接受死亡。是次工作坊主要協助家長、老師及相關工作人員了解小朋友對生命的看法，並以繪本協助小朋友了解死亡並走出<br/>哀傷。工作坊以臨床心理學的角度分析及協助成人了解兒童的精神健康，及提供簡單而實用的方法舒緩及處理兒童情緒問題。各參<br/>加者將會獲贈相關繪本一本。",
+    "BANNER_TRAUMA_INFORMED_PRACTICE": "創傷知情實踐",
+    "BANNER_TRAUMA_INFORMED_PRACTICE_CONTENT": "遭受心理創傷(Trauma)的人常被人誤解為「愛發脾氣」、「引人注意」、「唔專心」、「無記性」甚麼被指為有「性格障礙」等。<br/>然而，很多創傷患者都對以前的傷害難以啟齒，及有很多行為反應。創傷知情實踐 (Trauma-Informed Practice) 在外國的精神復康<br/>界一直被受重視，是一個以患者為本的實踐慣例。此實踐慣例不單鼓勵一個安全及治療的文化，更著重於強化患者的身心健康。<br/>希望透過短短三節的訓練後，大家會更了解心理創傷對患者的身心影響及其反應。另外大家亦會學習面對心理創傷患者的對應<br/>及照顧方式。",
+    "BANNER_SOCIAL_ENTERPRISE": "社會企業",
+    "BANNER_SOCIAL_ENTERPRISE_CONTENT": "「社企是一盤生意，透過企業策略和自負盈虧的營運方式，以達致特定的社會目的，而其不少於65%的可分發利潤會再投資於本身<br/>業務，以達到該社企的社會目的。」因此我們成立「心岸基金」，將某部份的利潤貢獻於社會作慈善用途，如支援弱勢社群的心理<br/>輔導，社區教育及小組治療。"
 }
