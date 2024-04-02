@@ -59,7 +59,7 @@ const ResponsiveAppBar = (props: React.PropsWithChildren<ResponsiveAppBarProps>)
 
   return (
     <ElevationScroll {...props}>
-      <AppBar>
+      <AppBar sx={{ bgcolor: 'rgb(124,190,209)' }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

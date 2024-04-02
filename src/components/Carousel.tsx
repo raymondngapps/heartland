@@ -80,6 +80,7 @@ const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
                                         position: 'absolute',
                                         color: 'white',
                                         alignSelf: 'flex-end',
+                                        fontSize: '20px',
                                         margin: '10px',
                                         paddingLeft: '10px',
                                         paddingRight: '10px',
