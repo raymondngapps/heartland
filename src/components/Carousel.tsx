@@ -59,7 +59,6 @@ const CarouselItem2 = () => {
     return (
         <Grid
             container 
-            margin={1}
             spacing={5}
             direction="row"
             sx={{
@@ -162,7 +161,7 @@ const CarouselItem2 = () => {
                 item 
                 xs={12}
                 sx={{
-                    backgroundColor: 'rgba(253, 211, 104, 0.5)',
+                    backgroundColor: 'rgba(253, 211, 104, 0.6)',
                 }}
             >
                 <Typography variant="h4">
@@ -249,6 +248,7 @@ const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
         <Stack 
             direction="row" 
             spacing={2} 
+            marginTop={5}
             sx={{ 
                 display: 'flex', 
                 alignItems: 'center',

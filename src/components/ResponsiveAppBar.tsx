@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
+import { StaticImage } from "gatsby-plugin-image";
 
 const pages = ['APP_BAR_HEARTLAND_FUND', 'APP_BAR_OUR_TEAM', 'APP_BAR_SERVICES', 'APP_BAR_TRAININGS', 'APP_BAR_RESOURCES', 'APP_BAR_DRUMBEAT', 'APP_BAR_BLOG'];
 
@@ -62,7 +63,7 @@ const ResponsiveAppBar = (props: React.PropsWithChildren<ResponsiveAppBarProps>)
       <AppBar sx={{ bgcolor: 'rgb(124,190,209)' }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+            <StaticImage src='../images/logo.png' alt="logo" height={110}/>
             <Typography
               variant="h6"
               noWrap
