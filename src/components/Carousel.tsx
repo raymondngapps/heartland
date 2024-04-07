@@ -8,6 +8,7 @@ import Slide from '@mui/material/Slide';
 import Stack from '@mui/material/Stack';
 import CarouselService from "./CarouselService";
 import CarouselHome from './CarouselHome';
+import CarouselFounder from './CarouselFounder';
 
 interface CarouselProps {
     sx?: React.CSSProperties;
@@ -21,7 +22,7 @@ const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
     const [ currentPage, setCurrentPage ] = useState<number>(0);
     const [ slideDirection, setSlideDirection ] = useState<'left' | 'right'>('left');
 
-    const carouselItems = [<CarouselHome/>, <CarouselService maxHeight={MIN_HEIGHT}/>];
+    const carouselItems = [<CarouselHome/>, <CarouselService maxHeight={MIN_HEIGHT}/>, <CarouselFounder maxHeight={MIN_HEIGHT}/>];
 
     const handleNextPage = useCallback(() => {
         setSlideDirection('left');

@@ -1,4 +1,4 @@
-import React, { useState, useCallback, Children} from 'react';
+import React from 'react';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import HighlightIcon from '@mui/icons-material/Highlight';
@@ -8,19 +8,23 @@ import { Grid, Typography, List, ListItem, ListItemText, ListItemAvatar, Avatar,
 import { StaticImage } from "gatsby-plugin-image";
 import { Trans } from 'gatsby-plugin-react-i18next';
 
-const CarouselService = ({maxHeight} : any) => {
+interface CarouselServiceProps {
+    maxHeight: string;
+    sx?: React.CSSProperties;
+}
+
+const CarouselService = (props: React.PropsWithChildren<CarouselServiceProps>) => {
     return (
         <Grid
             container 
-            spacing={5}
             direction="row"
             sx={{
-                maxHeight: maxHeight,
+                maxHeight: props.maxHeight,
                 overflowY: 'scroll',
                 backgroundColor: 'rgba(246, 236, 210, 1)',
             }}
         >
-            <Grid item xs={12} alignItems="center" justifyContent="center">
+            <Grid item xs={12}  padding={5}>
                 <StaticImage src="../images/assessments.png" alt="Assessments" />  
             </Grid>
             <Grid 
@@ -30,13 +34,13 @@ const CarouselService = ({maxHeight} : any) => {
                     backgroundColor: 'rgba(246, 236, 210, 0.5)',
                 }}
             >
-                <Typography variant="h4">
+                <Typography variant="h4" padding={2}>
                     <Trans>{'BANNER_GROUP_THERAPY'}</Trans><Divider/>
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="body1" padding={2}>
                     <Trans>{'BANNER_GROUP_THERAPY_CONTENT_1'}</Trans>
                 </Typography>
-                <Typography variant="body1">
+                <Typography variant="body1" padding={2}>
                     <Trans>{'BANNER_GROUP_THERAPY_CONTENT_2'}</Trans>
                 </Typography>
                 <Typography>
@@ -75,19 +79,19 @@ const CarouselService = ({maxHeight} : any) => {
                         </ListItem>
                     </List>
                 </Typography>
-                <Typography>
+                <Typography padding={2}>
                     <Trans>{'BANNER_GROUP_THERAPY_CONTENT_6'}</Trans> : 50 mins
                 </Typography>
-                <Typography>
+                <Typography padding={2}>
                     <Trans>{'BANNER_GROUP_THERAPY_CONTENT_7'}</Trans> : $1200 - $1600
                 </Typography>
-                <Typography>
+                <Typography padding={2}>
                     <Trans>{'BANNER_GROUP_THERAPY_CONTENT_8'}</Trans> : $900 -$1000
                 </Typography>
-                <Typography>
+                <Typography padding={2}>
                     <Trans>{'BANNER_GROUP_THERAPY_CONTENT_9'}</Trans> : $600-800
                 </Typography>
-                <Typography>
+                <Typography padding={2}>
                     <Trans>{'BANNER_GROUP_THERAPY_CONTENT_10'}</Trans> : $800 - $1200
                 </Typography>
                 <Typography>
@@ -103,6 +107,7 @@ const CarouselService = ({maxHeight} : any) => {
                     </List>
                 </Typography>                
                 <Typography 
+                    padding={2}
                     sx={{
                         fontWeight: 'bold',
                     }}
@@ -117,10 +122,10 @@ const CarouselService = ({maxHeight} : any) => {
                     backgroundColor: 'rgba(253, 211, 104, 0.6)',
                 }}
             >
-                <Typography variant="h4">
+                <Typography variant="h4" padding={2}>
                     <Trans>{'BANNER_PROFESSIONAL_TRANING'}</Trans><Divider/>
                 </Typography>
-                <Typography variant="h6">
+                <Typography variant="h5" padding={2}>
                     <Trans>{'BANNER_PROFESSIONAL_TRANING_CONTENT_1'}</Trans> : 
                 </Typography>
                 { 
@@ -146,7 +151,7 @@ const CarouselService = ({maxHeight} : any) => {
                         </List>
                     </Typography>                
                 )}
-                <Typography variant="h6">
+                <Typography variant="h5" padding={2}>
                     <Trans>{'BANNER_PROFESSIONAL_TRANING_CONTENT_9'}</Trans> : 
                 </Typography>
                 { 
