@@ -31,8 +31,6 @@ const badgeStyle = {
 // https://blog.logrocket.com/react-intl-internationalize-your-react-apps/
 // https://lokalise.com/blog/gatsby-i18n/
 const IndexPage: React.FC<PageProps> = () => {
-  
-  const { t } = useTranslation();
 
   return (
     <main style={pageStyles}>
