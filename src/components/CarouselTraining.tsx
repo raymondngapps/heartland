@@ -3,8 +3,8 @@ import cloudLadder from '../images/cloud_ladder.png';
 import paintbrush from '../images/paintbrush.png';
 import shock from '../images/shock.png';
 import { StaticImage } from "gatsby-plugin-image";
-import { Grid, Typography, IconButton, Divider } from '@mui/material';
-import { Info } from '@mui/icons-material';
+import { Grid, Typography, IconButton } from '@mui/material';
+import { Info, Mail } from '@mui/icons-material';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import ScrollDialog from './ScrollDialog';
 
@@ -110,6 +110,9 @@ const CarouselTraining = (props: React.PropsWithChildren<CarouselTrainingProps>)
                             />
                             <IconButton onClick={() => setClick(true)}>
                                 <Info /><Trans>DETAILS</Trans>
+                            </IconButton>
+                            <IconButton href="mailto:admin@heartland.com.hk">
+                                <Mail /><Trans>EMAIL</Trans>
                             </IconButton>
                         </Typography>
                     </Grid>
