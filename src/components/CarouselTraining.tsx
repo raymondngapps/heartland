@@ -16,6 +16,7 @@ interface CarouselTrainingProps {
 
 const CarouselTraining = (props: React.PropsWithChildren<CarouselTrainingProps>) => {
     const [click, setClick] = React.useState(false);
+    const [click1, setClick1] = React.useState(false);
     const {t} = useTranslation();
 
     return (
@@ -146,6 +147,41 @@ const CarouselTraining = (props: React.PropsWithChildren<CarouselTrainingProps>)
                             }}
                         >
                             <Trans>BANNER_TRANING_TIP_1</Trans>
+                        </Typography>
+                        <Typography  
+                            sx={{
+                                margin: '100px',
+                                color: 'darkblue',
+                                fontSize: '1.5em',
+                                textAlign: 'justify'
+                            }}
+                        >
+                            <ScrollDialog 
+                                status={click1} 
+                                setStatus={setClick1} 
+                                title={t("BANNER_TRANING_TIP")}
+                                content={
+                                    [
+                                        <p><Trans>BANNER_TRANING_TIP_2</Trans></p>,
+                                        <br/>,
+                                        <p><Trans>BANNER_TRANING_TIP_3</Trans></p>,
+                                        <br/>,
+                                        <p><Trans>BANNER_TRANING_TIP_4</Trans></p>,
+                                        <br/>,
+                                        <StaticImage src="../images/course_tip1.png" alt="Tip1" />,
+                                        <br/>,
+                                        <br/>,
+                                        <p><Trans>BANNER_TRANING_TIP_5</Trans></p>,
+                                        <StaticImage src="../images/course_tip2.png" alt="Death" />
+                                    ]
+                                }
+                            />
+                            <IconButton onClick={() => setClick1(true)}>
+                                <Info /><Trans>DETAILS</Trans>
+                            </IconButton>
+                            <IconButton href="mailto:admin@heartland.com.hk">
+                                <Mail /><Trans>EMAIL</Trans>
+                            </IconButton>
                         </Typography>
                     </Grid>
                 </Grid>

@@ -15,55 +15,48 @@ interface ScrollDialogProps {
 }
 
 const ScrollDialog = (props: React.PropsWithChildren<ScrollDialogProps>) => {
-  const [open, setOpen] = React.useState(false);
+
   const [scroll, setScroll] = React.useState<DialogProps['scroll']>('paper');
 
   const handleClose = () => {
-    setOpen(false);
     props.setStatus(false);
   };
 
   const descriptionElementRef = React.useRef<HTMLElement>(null);
 
   React.useEffect(() => {
-    setOpen(props.status);
-  }, [props.status]);
-
-  React.useEffect(() => {
-    if (open) {
+    if (props.status) {
       const { current: descriptionElement } = descriptionElementRef;
       if (descriptionElement !== null) {
         descriptionElement.focus();
       }
     }
-  }, [open]);
+  }, [props.status]);
 
   return (
-    <React.Fragment>
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        scroll={scroll}
-        aria-labelledby="scroll-dialog-title"
-        aria-describedby="scroll-dialog-description"
-      >
-        <DialogTitle id="scroll-dialog-title">{props.title}</DialogTitle>
-        <DialogContent dividers={scroll === 'paper'}>
-          <DialogContentText
-            id="scroll-dialog-description"
-            ref={descriptionElementRef}
-            tabIndex={-1}
-          >
-            {
-                props.content?.map((content, index) => content)
-            }
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>OK</Button>
-        </DialogActions>
-      </Dialog>
-    </React.Fragment>
+    <Dialog
+      open={props.status}
+      onClose={handleClose}
+      scroll={scroll}
+      aria-labelledby="scroll-dialog-title"
+      aria-describedby="scroll-dialog-description"
+    >
+      <DialogTitle id="scroll-dialog-title">{props.title}</DialogTitle>
+      <DialogContent dividers={scroll === 'paper'}>
+        <DialogContentText
+          id="scroll-dialog-description"
+          ref={descriptionElementRef}
+          tabIndex={-1}
+        >
+          {
+              props.content?.map((content, index) => content)
+          }
+        </DialogContentText>
+      </DialogContent>
+      <DialogActions>
+        <Button onClick={handleClose}>OK</Button>
+      </DialogActions>
+    </Dialog>
   );
 };
 
