@@ -1,6 +1,5 @@
 {
-    "Home Page": "Welcome to my Gatsby site!",
-    "message": "My name is Shanika",
+    "DETAILS": "Details",
     "en": "English",
     "zh": "中文",
     "APP_BAR_HOME": "Home",
@@ -66,5 +65,11 @@
     "BANNER_TEAM_MEMBER_TEAMMEMBERS_3": "Sex and Family Therapist",
     "BANNER_TEAM_MEMBER_TEAMMEMBERS_4": "Individual and couple therapy, and Assessment",
     "BANNER_TEAM_MEMBER_TEAMMEMBERS_5": "Play Therapy",
-    "BANNER_TEAM_MEMBER_TEAMMEMBERS_6": "Children and Family Play Therapy"
+    "BANNER_TEAM_MEMBER_TEAMMEMBERS_6": "Children and Family Play Therapy",
+    "BANNER_TRANING_SEX_EDUCATION": "Smart 'Acquisition' Sex Education Course",
+    "BANNER_TRANING_SEX_EDUCATION_1": "Have you ever experienced difficulty in conveying sexual knowledge to people with intellectual disabilities? Have you ever been at a loss for words when trying to express knowledge and attitudes about sex? Do you know what sexual knowledge and attitudes are? Sex is a taboo in local culture; discussing it with people around you is not easy, let alone with individuals with intellectual disabilities. Therefore, this course hopes to help workers learn to discuss sex with individuals with intellectual disabilities, and even provide sex education.",
+    "BANNER_TRANING_UNDERSTAND_DEATH": "Starting from Picture Books: Understanding Death and Supporting Children's Emotions Workshop",
+    "BANNER_TRANING_UNDERSTAND_DEATH_1": "Children's understanding of death differs from adults, and so does their level of acceptance. However, adults not only have to deal with their own emotions when faced with death but also need to help children understand and accept it. This workshop is primarily designed to assist parents, teachers, and related professionals in understanding children's views on life, and to use picture books to help children understand death and cope with grief. The workshop offers an analysis from the perspective of clinical psychology to aid adults in understanding children's mental health and provides simple and practical methods to soothe and deal with children's emotional issues. Each participant will receive a related picture book.",
+    "BANNER_TRANING_TIP": "Trauma-Informed Practice",
+    "BANNER_TRANING_TIP_1": "People who have suffered psychological trauma are often misunderstood as being 'quick-tempered', 'attention-seeking', 'unfocused', 'forgetful', or even labeled as having a 'personality disorder'. However, many trauma victims find it difficult to speak about their past wounds and exhibit a variety of behavioral responses.<br/><br/>Trauma-Informed Practice has long been valued in the mental health rehabilitation community abroad as a patient-centered practice standard. This practice not only encourages a safe and therapeutic culture but also focuses on strengthening the patients' physical and mental health.<br/><br/>It is hoped that after just three sessions of training, everyone will have a better understanding of the physical and mental impacts of psychological trauma on patients and their responses. Additionally, participants will learn how to interact with and care for individuals with psychological trauma."
 }

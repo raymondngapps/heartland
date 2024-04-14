@@ -1,6 +1,5 @@
 {
-    "Home Page": "Welcome to my Gatsby site!",
-    "message": "My name is Shanika",
+    "DETAILS": "詳情",
     "en": "English",
     "zh": "中文",
     "APP_BAR_HOME": "首頁",
@@ -68,6 +67,11 @@
     "BANNER_TEAM_MEMBER_TEAMMEMBERS_3": "​性及家庭治療師",
     "BANNER_TEAM_MEMBER_TEAMMEMBERS_4": "個人和伴侶治療,和評估",
     "BANNER_TEAM_MEMBER_TEAMMEMBERS_5": "​遊戲治療",
-    "BANNER_TEAM_MEMBER_TEAMMEMBERS_6": "兒童和家庭遊戲療法"
-
+    "BANNER_TEAM_MEMBER_TEAMMEMBERS_6": "兒童和家庭遊戲療法",
+    "BANNER_TRANING_SEX_EDUCATION": "智「取」性教育課程",
+    "BANNER_TRANING_SEX_EDUCATION_1": "你試過向智力障礙人講解性知識時詞不達意嗎?<br/>你試過不懂得表達有關性知識及性態度嗎?<br/>你知道甚麼是性知識及性態度嗎 ?<br/>性是本地文化中的忌諱，要與身邊人談論性已不是易事，更何況是智障人士? <br/><br/>因此，本課程希望令同工學習與智障人士談論性，甚至性教育",
+    "BANNER_TRANING_UNDERSTAND_DEATH": "從繪本開始: 了解死亡及兒童情緒支援工作坊",
+    "BANNER_TRANING_UNDERSTAND_DEATH_1": "小朋友對死亡的理解與成年人不同，而其接受程度亦因而相異。然而，成年人面對死亡時不但要處理自己的情緒，更要協助小朋友理解及接受死亡。是次工作坊主要協助家長、老師及相關工作人員了解小朋友對生命的看法，並以繪本協助小朋友了解死亡並走出哀傷。工作坊以臨床心理學的角度分析及協助成人了解兒童的精神健康，及提供簡單而實用的方法舒緩及處理兒童情緒問題。各參加者將會獲贈相關繪本一本。",
+    "BANNER_TRANING_TIP": "創傷知情實踐",
+    "BANNER_TRANING_TIP_1": "遭受心理創傷(Trauma)的人常被人誤解為「愛發脾氣」、「引人注意」、「唔專心」、「無記性」甚麼被指為有「性格障礙」等。然而，很多創傷患者都對以前的傷害難以啟齒，及有很多行為反應。<br/><br/>創傷知情實踐 (Trauma-Informed Practice) 在外國的精神復康界一直被受重視，是一個以患者為本的實踐慣例。此實踐慣例不單鼓勵一個安全及治療的文化，更著重於強化患者的身心健康。<br/><br/>希望透過短短三節的訓練後，大家會更了解心理創傷對患者的身心影響及其反應。另外大家亦會學習面對心理創傷患者的對應及照顧方式。"
 }
