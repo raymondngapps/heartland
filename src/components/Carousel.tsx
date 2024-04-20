@@ -10,6 +10,7 @@ import CarouselService from "./CarouselService";
 import CarouselHome from './CarouselHome';
 import CarouselFounder from './CarouselFounder';
 import CarouselTraining from './CarouselTraining';
+import CarouselResources from './CarouselResources';
 
 interface CarouselProps {
     sx?: React.CSSProperties;
@@ -27,7 +28,8 @@ const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
         <CarouselHome/>, 
         <CarouselService maxHeight={MIN_HEIGHT}/>, 
         <CarouselFounder maxHeight={MIN_HEIGHT}/>,
-        <CarouselTraining maxHeight={MIN_HEIGHT}/>
+        <CarouselTraining maxHeight={MIN_HEIGHT}/>,
+        <CarouselResources maxHeight={MIN_HEIGHT}/>
     ];
 
     const handleNextPage = useCallback(() => {
@@ -82,7 +84,7 @@ const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
             </Paper>
             <IconButton
                     onClick={handleNextPage}
-                    disabled={currentPage === Children.count(props.children) - 1}
+                    disabled={currentPage === carouselItems.length - 1}
             >
                 <NavigateNextIcon />
             </IconButton>

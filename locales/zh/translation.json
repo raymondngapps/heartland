@@ -1,5 +1,6 @@
 {
     "DETAILS": "詳情",
+    "DOWNLOAD": "下載",
     "EMAIL": "電郵",
     "en": "English",
     "zh": "中文",
@@ -78,5 +79,12 @@
     "BANNER_TRANING_TIP_2": "創傷知情實踐 Trauma-Informed Practice 在外國的精神復康界一直被受重視，是一個以患者為本的實踐慣例。然而，其發展在香港仍在起步點。心岸社企希望透過不同程度的課程及訓練，在香港普及創傷知情實踐，從而減低受創傷的人經歷二次創傷 (Secondary trauma) ，及減低同工的替代性創傷或創傷接觸反應(Trauma exposure response)。",
     "BANNER_TRANING_TIP_3": "創傷知情實踐並不止限於專業同工，如社工、心理學家、輔導員、急救員、護士、醫生等，其他前線同工如活動幹事、保健員、老師、輔導/訓導主任、職工等。心岸社企明白不同的工種對創傷知情實踐需求不同，因此我們的課程及訓練會因應參與者的需要而提供不同程度的內容。" ,
     "BANNER_TRANING_TIP_4": "導師：臨床心理學家、社工及職業治療師",
-    "BANNER_TRANING_TIP_5": "Aquina參考了中外不同的研究及訓練，如美國藥物濫用暨心理健康服務署(Substance Abuse and Mental Health Services Administration，簡稱SAMHSA)，並考慮香港及華人文化，建構了以下 的創傷知情實踐 Trauma-Informed Practice的課程及訓練模式。此連續性模式能應用到不同的工作層面，由淺入深地介紹的創傷知情實踐 Trauma-Informed Practice及技巧，協助不同參與者及機構的需要。"
+    "BANNER_TRANING_TIP_5": "Aquina參考了中外不同的研究及訓練，如美國藥物濫用暨心理健康服務署(Substance Abuse and Mental Health Services Administration，簡稱SAMHSA)，並考慮香港及華人文化，建構了以下 的創傷知情實踐 Trauma-Informed Practice的課程及訓練模式。此連續性模式能應用到不同的工作層面，由淺入深地介紹的創傷知情實踐 Trauma-Informed Practice及技巧，協助不同參與者及機構的需要。",
+    "BANNER_RESOURCES_CBT_1": "認知行為治療描述性案例概念化",
+    "BANNER_RESOURCES_CBT_2": "簡單的表格,幫助您簡單構思/制定你的案例。",
+    "BANNER_RESOURCES_CBT_3": "認知行為治療描述性案例概念化表格",
+    "BANNER_RESOURCES_CBT_4": "更全面的形式表述案例",
+    "BANNER_RESOURCES_CBT_5": "下載 The Earth (標準尺寸).",
+    "BANNER_RESOURCES_CBT_6": "下載 The Earth (較小尺寸).",
+    "BANNER_RESOURCES_CBT_7": "下載中文版本-兩種尺寸"
 }

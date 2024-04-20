@@ -1,5 +1,6 @@
 {
     "DETAILS": "Details",
+    "DOWNLOAD": "Download",
     "EMAIL": "Email",
     "en": "English",
     "zh": "中文",
@@ -76,5 +77,12 @@
     "BANNER_TRANING_TIP_2": "Trauma-Informed Practice has always been valued in the mental health rehabilitation field abroad as a patient-centered standard of practice. However, its development in Hong Kong is still in the early stages. Heartshore Social Enterprise hopes to popularize Trauma-Informed Practice in Hong Kong through various levels of courses and training, thereby reducing the experience of secondary trauma in trauma-affected individuals and lessening the vicarious trauma or trauma exposure response in co-workers.",
     "BANNER_TRANING_TIP_3": "Trauma-informed practice is not limited to professionals such as social workers, psychologists, counselors, paramedics, nurses, doctors, etc. Other frontline workers such as event organizers, health workers, teachers, counseling/guidance directors, staff, etc., are also involved. Heart Shore Social Enterprises understands that different professions have different needs for trauma-informed practice. Therefore, our courses and training provide varying levels of content based on the participants' needs." ,
     "BANNER_TRANING_TIP_4": "Mentors: Clinical psychologists, social workers, and occupational therapists.",
-    "BANNER_TRANING_TIP_5": "Aquina has referenced various domestic and foreign studies and training, such as the Substance Abuse and Mental Health Services Administration (SAMHSA) in the United States, while considering Hong Kong and Chinese culture, to develop the following Trauma-Informed Practice courses and training models. This sequential model can be applied to different levels of work, introducing Trauma-Informed Practice and techniques from shallow to deep, assisting the needs of various participants and organizations."
+    "BANNER_TRANING_TIP_5": "Aquina has referenced various domestic and foreign studies and training, such as the Substance Abuse and Mental Health Services Administration (SAMHSA) in the United States, while considering Hong Kong and Chinese culture, to develop the following Trauma-Informed Practice courses and training models. This sequential model can be applied to different levels of work, introducing Trauma-Informed Practice and techniques from shallow to deep, assisting the needs of various participants and organizations.",
+    "BANNER_RESOURCES_CBT_1": "CBT Descriptive Case Conceptualization",
+    "BANNER_RESOURCES_CBT_2": "A simple form to help you conceptualize/ formulate your case in brief",
+    "BANNER_RESOURCES_CBT_3": "CBT Descriptive Case Conceptualization Form",
+    "BANNER_RESOURCES_CBT_4": "A more comprehensive form for case conceptualization/ formulation.",
+    "BANNER_RESOURCES_CBT_5": "Download The Earth (Normal Size).",
+    "BANNER_RESOURCES_CBT_6": "Download The Earth (Smaller Size).",
+    "BANNER_RESOURCES_CBT_7": "Download Chinese version with 2 sizes"
 }

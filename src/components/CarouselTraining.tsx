@@ -8,7 +8,6 @@ import { Info, Mail } from '@mui/icons-material';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import ScrollDialog from './ScrollDialog';
 
-
 interface CarouselTrainingProps {
     maxHeight: string;
     sx?: React.CSSProperties;
@@ -29,7 +28,7 @@ const CarouselTraining = (props: React.PropsWithChildren<CarouselTrainingProps>)
             }}
         >
             <Grid item xs={12} sx={{
-                minHeight: '700px',
+                minHeight: '750px',
                 backgroundImage: `linear-gradient(rgba(124,190,209, 0.6), rgba(124,190,209, 0.6)),url(${cloudLadder})`,
                 backgroundSize: 'cover',
                 display: 'flex',
@@ -64,7 +63,7 @@ const CarouselTraining = (props: React.PropsWithChildren<CarouselTrainingProps>)
                 </Grid>
             </Grid>
             <Grid item xs={12} sx={{
-                minHeight: '700px',
+                minHeight: '750px',
                 backgroundImage: `linear-gradient(rgba(124,190,209, 0.2), rgba(124,190,209, 0.6)),url(${paintbrush})`,
                 backgroundSize: 'cover',
                 display: 'flex',
@@ -120,7 +119,7 @@ const CarouselTraining = (props: React.PropsWithChildren<CarouselTrainingProps>)
                 </Grid>
             </Grid>
             <Grid item xs={12} sx={{
-                minHeight: '700px',
+                minHeight: '750px',
                 backgroundImage: `linear-gradient(rgba(124,190,209, 0.7), rgba(124,190,209, 0.6)),url(${shock})`,
                 backgroundSize: 'cover',
                 display: 'flex',
