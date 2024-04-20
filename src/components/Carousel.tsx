@@ -11,6 +11,7 @@ import CarouselHome from './CarouselHome';
 import CarouselFounder from './CarouselFounder';
 import CarouselTraining from './CarouselTraining';
 import CarouselResources from './CarouselResources';
+import CarouselDrumbeat from './CarouselDrumbeat';
 
 interface CarouselProps {
     sx?: React.CSSProperties;
@@ -29,7 +30,8 @@ const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
         <CarouselService maxHeight={MIN_HEIGHT}/>, 
         <CarouselFounder maxHeight={MIN_HEIGHT}/>,
         <CarouselTraining maxHeight={MIN_HEIGHT}/>,
-        <CarouselResources maxHeight={MIN_HEIGHT}/>
+        <CarouselResources maxHeight={MIN_HEIGHT}/>,
+        <CarouselDrumbeat maxHeight={MIN_HEIGHT}/>
     ];
 
     const handleNextPage = useCallback(() => {

@@ -1,7 +1,6 @@
 import React from 'react';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import { Grid, Typography, IconButton } from '@mui/material';
-import { StaticImage } from "gatsby-plugin-image";
 import { Trans } from 'gatsby-plugin-react-i18next';
 import legs from '../images/legs.png';
 import seaview from '../images/seaview.png'
