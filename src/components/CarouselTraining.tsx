@@ -27,6 +27,35 @@ const CarouselTraining = (props: React.PropsWithChildren<CarouselTrainingProps>)
                 overflowY: 'scroll',
             }}
         >
+            <ScrollDialog 
+                status={click} 
+                setStatus={setClick} 
+                title={t("DETAILS")}
+                content={
+                    [<StaticImage src="../images/course_death1.png" alt="Death" />
+                    ,<StaticImage src="../images/course_death2.png" alt="Death" />]
+                }
+            />
+            <ScrollDialog 
+                status={click1} 
+                setStatus={setClick1} 
+                title={t("BANNER_TRANING_TIP")}
+                content={
+                    [
+                        <p><Trans>BANNER_TRANING_TIP_2</Trans></p>,
+                        <br/>,
+                        <p><Trans>BANNER_TRANING_TIP_3</Trans></p>,
+                        <br/>,
+                        <p><Trans>BANNER_TRANING_TIP_4</Trans></p>,
+                        <br/>,
+                        <StaticImage src="../images/course_tip1.png" alt="Tip1" />,
+                        <br/>,
+                        <br/>,
+                        <p><Trans>BANNER_TRANING_TIP_5</Trans></p>,
+                        <StaticImage src="../images/course_tip2.png" alt="Death" />
+                    ]
+                }
+            />
             <Grid item xs={12} sx={{
                 minHeight: '750px',
                 backgroundImage: `linear-gradient(rgba(124,190,209, 0.6), rgba(124,190,209, 0.6)),url(${cloudLadder})`,
@@ -99,15 +128,6 @@ const CarouselTraining = (props: React.PropsWithChildren<CarouselTrainingProps>)
                                 textAlign: 'justify'
                             }}
                         >
-                            <ScrollDialog 
-                                status={click} 
-                                setStatus={setClick} 
-                                title={t("DETAILS")}
-                                content={
-                                    [<StaticImage src="../images/course_death1.png" alt="Death" />
-                                    ,<StaticImage src="../images/course_death2.png" alt="Death" />]
-                                }
-                            />
                             <IconButton onClick={() => setClick(true)}>
                                 <Info /><Trans>DETAILS</Trans>
                             </IconButton>
@@ -155,26 +175,6 @@ const CarouselTraining = (props: React.PropsWithChildren<CarouselTrainingProps>)
                                 textAlign: 'justify'
                             }}
                         >
-                            <ScrollDialog 
-                                status={click1} 
-                                setStatus={setClick1} 
-                                title={t("BANNER_TRANING_TIP")}
-                                content={
-                                    [
-                                        <p><Trans>BANNER_TRANING_TIP_2</Trans></p>,
-                                        <br/>,
-                                        <p><Trans>BANNER_TRANING_TIP_3</Trans></p>,
-                                        <br/>,
-                                        <p><Trans>BANNER_TRANING_TIP_4</Trans></p>,
-                                        <br/>,
-                                        <StaticImage src="../images/course_tip1.png" alt="Tip1" />,
-                                        <br/>,
-                                        <br/>,
-                                        <p><Trans>BANNER_TRANING_TIP_5</Trans></p>,
-                                        <StaticImage src="../images/course_tip2.png" alt="Death" />
-                                    ]
-                                }
-                            />
                             <IconButton onClick={() => setClick1(true)}>
                                 <Info /><Trans>DETAILS</Trans>
                             </IconButton>

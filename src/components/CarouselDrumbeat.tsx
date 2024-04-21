@@ -45,10 +45,9 @@ const CarouselResources =  (props: React.PropsWithChildren<CarouselDrumbeatProps
                         height="400" 
                         src="https://www.youtube.com/embed/8JJSZt2HMx4" 
                         title="Holyoake&#39;s Award Winning DRUMBEAT® Program" 
-                        frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen>
                     </iframe>
                 </Typography>
             </Grid>
@@ -60,10 +59,9 @@ const CarouselResources =  (props: React.PropsWithChildren<CarouselDrumbeatProps
                         height="400" 
                         src="https://www.youtube.com/embed/0S6dPB5q1Hs" 
                         title="DRUMBEAT® USA: building relationships Polk County, FL" 
-                        frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen>
                     </iframe>
                 </Typography>
             </Grid>
@@ -80,10 +78,9 @@ const CarouselResources =  (props: React.PropsWithChildren<CarouselDrumbeatProps
                                 height="315" 
                                 src="https://www.youtube.com/embed/NKiYVpPnXcU" 
                                 title="社區輪椅褓母隊 之「鼓動『深』情工作坊」: Holyoake's DRUMBEAT®" 
-                                frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
+                                referrerPolicy="strict-origin-when-cross-origin" 
+                                allowFullScreen>
                 
                             </iframe>
                         </Grid>
