@@ -5,14 +5,15 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { Grid, Card, Typography } from '@mui/material';
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Typography, CardMedia } from '@mui/material';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 interface ScrollBlogDialogProps {
     content?: any[];
     title: string;
     status: boolean;
-    setStatus: React.Dispatch<React.SetStateAction<boolean>>;
+    image: any;
+    setStatus: React.Dispatch<React.SetStateAction<number>>;
     sx?: React.CSSProperties;
 }
 
@@ -22,7 +23,7 @@ const ScrollBlogDialog = (props: React.PropsWithChildren<ScrollBlogDialogProps>)
   const [scroll, setScroll] = React.useState<DialogProps['scroll']>('paper');
 
   const handleClose = () => {
-    props.setStatus(false);
+    props.setStatus(0);
   };
 
   const descriptionElementRef = React.useRef<HTMLElement>(null);
@@ -38,6 +39,7 @@ const ScrollBlogDialog = (props: React.PropsWithChildren<ScrollBlogDialogProps>)
 
   return (
     <Dialog
+      fullScreen
       open={props.status}
       onClose={handleClose}
       scroll={scroll}
@@ -52,9 +54,15 @@ const ScrollBlogDialog = (props: React.PropsWithChildren<ScrollBlogDialogProps>)
           tabIndex={-1}
         >
           {
-              props.content?.map((content, index) => <Typography>{t(content)}</Typography>)
+            props.content?.map((content, index) => <Typography sx={{ lineHeight: 2, borderSpacing: 2 }}>{t(content)}</Typography>)
           }
         </DialogContentText>
+        <CardMedia
+          component="img"
+          sx={{ width: 400 }}
+          image={props.image}
+          alt="Sunset"
+        />
       </DialogContent>
       <DialogActions>
         <Button onClick={handleClose}>OK</Button>
