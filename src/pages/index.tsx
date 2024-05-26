@@ -1,9 +1,9 @@
-import * as React from "react"
+import React, { useState } from "react"
 import {graphql} from 'gatsby';
 import type { HeadFC, PageProps } from "gatsby"
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
-import Banner from "../components/Banner";
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import Carousel from "../components/Carousel";
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 const pageStyles = {
   color: "#232129",
@@ -31,11 +31,12 @@ const badgeStyle = {
 // https://blog.logrocket.com/react-intl-internationalize-your-react-apps/
 // https://lokalise.com/blog/gatsby-i18n/
 const IndexPage: React.FC<PageProps> = () => {
+  const [ currentPage, setCurrentPage ] = useState<number>(0);
 
   return (
     <main style={pageStyles}>
       <ResponsiveAppBar />
-      <Banner />
+      <Carousel currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </main>
   )
 }

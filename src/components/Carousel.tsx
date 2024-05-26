@@ -1,5 +1,5 @@
-import React, { useState, useCallback, Children} from 'react';
-import { Box, Container, Paper, Grid, Typography, List, ListItem, ListItemText, ListItemAvatar, Avatar, Divider } from '@mui/material';
+import React, { useState, useCallback, Dispatch, SetStateAction } from 'react';
+import { Container, Paper } from '@mui/material';
 import { IconButton } from '@mui/material';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -15,15 +15,16 @@ import CarouselDrumbeat from './CarouselDrumbeat';
 import CarouselBlog from './CarouselBlog';  
 
 interface CarouselProps {
+    currentPage: number;
+    setCurrentPage: Dispatch<SetStateAction<number>>
     sx?: React.CSSProperties;
 }
 
 const MIN_WIDTH = '1280px';
 const MIN_HEIGHT = '720px';
 
-const Carousel = (props: React.PropsWithChildren<CarouselProps>) => {
+const Carousel = ({currentPage, setCurrentPage, sx }: React.PropsWithChildren<CarouselProps>) => {
     //const { t } = useTranslation();
-    const [ currentPage, setCurrentPage ] = useState<number>(0);
     const [ slideDirection, setSlideDirection ] = useState<'left' | 'right'>('left');
 
     const carouselItems = [
