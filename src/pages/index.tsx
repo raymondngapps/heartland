@@ -35,7 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
     <main style={pageStyles}>
-      <ResponsiveAppBar />
+      <ResponsiveAppBar setCurrentPage={setCurrentPage} />
       <Carousel currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </main>
   )

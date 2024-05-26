@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -16,9 +16,18 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from "gatsby-plugin-image";
 
-const pages = ['APP_BAR_HEARTLAND_FUND', 'APP_BAR_OUR_TEAM', 'APP_BAR_SERVICES', 'APP_BAR_TRAININGS', 'APP_BAR_RESOURCES', 'APP_BAR_DRUMBEAT', 'APP_BAR_BLOG'];
+const pages = [
+  { index: 0, page: 'APP_BAR_HEARTLAND_FUND' },
+  { index: 0, page: 'APP_BAR_OUR_TEAM' },
+  { index: 0, page: 'APP_BAR_SERVICES' },
+  { index: 0, page: 'APP_BAR_TRAININGS' },
+  { index: 0, page: 'APP_BAR_RESOURCES' },
+  { index: 0, page: 'APP_BAR_DRUMBEAT' },
+  { index: 0, page: 'APP_BAR_BLOG' }
+];
 
 interface ResponsiveAppBarProps {
+  setCurrentPage: Dispatch<SetStateAction<number>>
   sx?: React.CSSProperties;
 };
 // This is use to make the menu always on top when scrolling
@@ -35,7 +44,7 @@ const ElevationScroll = (props: React.PropsWithChildren<ResponsiveAppBarProps>) 
   });
 };
 
-const ResponsiveAppBar = (props: React.PropsWithChildren<ResponsiveAppBarProps>) => {
+const ResponsiveAppBar = (props : React.PropsWithChildren<ResponsiveAppBarProps>) => {
 
   const { t } = useTranslation();
   const {languages, originalPath} = useI18next();
@@ -111,9 +120,9 @@ const ResponsiveAppBar = (props: React.PropsWithChildren<ResponsiveAppBarProps>)
                   display: { xs: 'block', md: 'none' },
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{t(page)}</Typography>
+                {pages.map((i) => (
+                  <MenuItem key={i.page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{t(i.page)}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -138,13 +147,13 @@ const ResponsiveAppBar = (props: React.PropsWithChildren<ResponsiveAppBarProps>)
               LOGO
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              {pages.map((page) => (
+              {pages.map((i) => (
                 <Button
-                  key={page}
+                  key={i.page}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
-                  { t(page) }
+                  { t(i.page) }
                 </Button>
               ))}
             </Box>
