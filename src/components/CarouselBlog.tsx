@@ -5,6 +5,7 @@ import ScrollBlogDialog from './ScrollBlogDialog';
 import sunset from '../images/sunset.png';  
 import godess from '../images/godess.png';  
 import godess1 from '../images/godess1.png';  
+import play_mind from '../images/play_mind.png';  
 
 interface CarouselBlogProps {
     maxHeight: string;
@@ -98,63 +99,28 @@ const CarouselBlog = (props: React.PropsWithChildren<CarouselBlogProps>) => {
                     <CardMedia
                         component="img"
                         sx={{ width: 400 }}
-                        image={sunset}
+                        image={play_mind}
                         alt="Sunset"
                     />
                     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                    <ScrollBlogDialog 
+                                status={click === 3} 
+                                setStatus={setClick} 
+                                image={play_mind}
+                                title={t("BLOG_3_TITLE")}
+                                content={[
+                                    "BLOG_3_CONTENT_1","BLOG_3_CONTENT_2", "BLOG_3_CONTENT_3","BLOG_3_CONTENT_4",
+                                    "BLOG_3_CONTENT_5","BLOG_3_CONTENT_6", "BLOG_3_CONTENT_7"
+                                ]}
+                            /> 
                         <CardContent sx={{ flex: '1 0 auto', margin: 1}} onClick={() => setClick(3)}>
                             <Typography component="div" variant="h5">
-                                <Trans>BLOG_1_TITLE</Trans>
+                                <Trans>BLOG_3_TITLE</Trans>
                             </Typography>
                             <Typography color="text.secondary">
-                                <Trans>BLOG_1_CONTENT_1</Trans> ...
+                                <Trans>BLOG_3_CONTENT_1</Trans> ...
                             </Typography>
 
-                        </CardContent>
-                        <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-                        </Box>
-                    </Box>
-                </Card>                
-            </Grid>
-            <Grid item xs={12}>
-                <Card sx={{ display: 'flex', border: 1, borderColor: 'grey.500' }}>
-                    <CardMedia
-                        component="img"
-                        sx={{ width: 400 }}
-                        image={sunset}
-                        alt="Sunset"
-                    />
-                    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                        <CardContent sx={{ flex: '1 0 auto', margin: 1}} onClick={() => setClick(4)}>
-                            <Typography component="div" variant="h5">
-                                <Trans>BLOG_1_TITLE</Trans>
-                            </Typography>
-                            <Typography color="text.secondary">
-                                <Trans>BLOG_1_CONTENT_1</Trans> ...
-                            </Typography>
-
-                        </CardContent>
-                        <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-                        </Box>
-                    </Box>
-                </Card>                
-            </Grid>
-            <Grid item xs={12}>
-                <Card sx={{ display: 'flex', border: 1, borderColor: 'grey.500' }}>
-                    <CardMedia
-                        component="img"
-                        sx={{ width: 400 }}
-                        image={sunset}
-                        alt="Sunset"
-                    />
-                    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                        <CardContent sx={{ flex: '1 0 auto', margin: 1}} onClick={() => setClick(5)}>
-                            <Typography component="div" variant="h5">
-                                <Trans>BLOG_1_TITLE</Trans>
-                            </Typography>
-                            <Typography color="text.secondary">
-                                <Trans>BLOG_1_CONTENT_1</Trans> ...
-                            </Typography>
                         </CardContent>
                         <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
                         </Box>

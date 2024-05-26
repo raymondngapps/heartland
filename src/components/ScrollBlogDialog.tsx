@@ -5,7 +5,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { Typography, CardMedia } from '@mui/material';
+import { Typography, CardMedia, Box } from '@mui/material';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
 interface ScrollBlogDialogProps {
@@ -53,9 +53,11 @@ const ScrollBlogDialog = (props: React.PropsWithChildren<ScrollBlogDialogProps>)
           ref={descriptionElementRef}
           tabIndex={-1}
         >
-          {
-            props.content?.map((content, index) => <Typography sx={{ lineHeight: 2, borderSpacing: 2 }}>{t(content)}</Typography>)
-          }
+           <Box sx={{ display: "flex", flexDirection:"column", alignItems:"left", gap: "1rem" }}>
+            {
+              props.content?.map((content, index) => <Typography sx={{ lineHeight: 2, borderSpacing: 2 }}>{t(content)}</Typography>)
+            }
+          </Box>
         </DialogContentText>
         <CardMedia
           component="img"
