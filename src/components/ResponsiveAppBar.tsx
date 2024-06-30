@@ -18,12 +18,12 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const pages = [
   { index: 0, page: 'APP_BAR_HEARTLAND_FUND' },
-  { index: 0, page: 'APP_BAR_OUR_TEAM' },
-  { index: 0, page: 'APP_BAR_SERVICES' },
-  { index: 0, page: 'APP_BAR_TRAININGS' },
-  { index: 0, page: 'APP_BAR_RESOURCES' },
-  { index: 0, page: 'APP_BAR_DRUMBEAT' },
-  { index: 0, page: 'APP_BAR_BLOG' }
+  { index: 2, page: 'APP_BAR_OUR_TEAM' },
+  { index: 1, page: 'APP_BAR_SERVICES' },
+  { index: 3, page: 'APP_BAR_TRAININGS' },
+  { index: 4, page: 'APP_BAR_RESOURCES' },
+  { index: 5, page: 'APP_BAR_DRUMBEAT' },
+  { index: 6, page: 'APP_BAR_BLOG' }
 ];
 
 interface ResponsiveAppBarProps {
@@ -55,15 +55,21 @@ const ResponsiveAppBar = (props : React.PropsWithChildren<ResponsiveAppBarProps>
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenuItem = (event: React.MouseEvent<HTMLElement>, index: number) => {
+    setAnchorElNav(null);
+    props.setCurrentPage(index);
+  };
+
+  const handleCloseNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
+  const handleCloseUserMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElUser(null);
   };
 
@@ -121,7 +127,7 @@ const ResponsiveAppBar = (props : React.PropsWithChildren<ResponsiveAppBarProps>
                 }}
               >
                 {pages.map((i) => (
-                  <MenuItem key={i.page} onClick={handleCloseNavMenu}>
+                  <MenuItem key={i.index} onClick={(evt) => handleCloseNavMenuItem(evt, i.index)}>
                     <Typography textAlign="center">{t(i.page)}</Typography>
                   </MenuItem>
                 ))}
@@ -150,7 +156,7 @@ const ResponsiveAppBar = (props : React.PropsWithChildren<ResponsiveAppBarProps>
               {pages.map((i) => (
                 <Button
                   key={i.page}
-                  onClick={handleCloseNavMenu}
+                  onClick={(evt) => handleCloseNavMenuItem(evt, i.index)}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   { t(i.page) }
